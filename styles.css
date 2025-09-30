@@ -1,0 +1,8 @@
+* {
+    font-family: monospace, monospace;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+}
