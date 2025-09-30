@@ -1,8 +1,14 @@
 * {
     font-family: monospace, monospace;
+    background-color: #257180;
 }
 
 article {
-    max-width: 800px;
+    max-width: 640px;
     margin: 0 auto;
+    color: #F2E5BF;
+}
+
+a {
+    color: #FF9013;
 }
