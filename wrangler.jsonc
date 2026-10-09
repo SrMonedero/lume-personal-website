@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "quique-info",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./_site"
+  },
+  "routes": [
+    { "pattern": "quique.info", "custom_domain": true },
+    { "pattern": "www.quique.info", "custom_domain": true }
+  ]
+}
