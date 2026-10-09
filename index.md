@@ -1,15 +1,19 @@
 ---
 layout: layout.vto
+title: Quique Álvarez Monedero
+description: Software engineer. Part of The Left Bit and Semantico. Building BOE Fácil.
 ---
 
-## Quique Álvarez Monedero
+# Quique Álvarez Monedero
 
-My name is Quique _/Kee-Keh/_. I'm a software engineer.
+My name is Quique <span class="pron">/Kee-Keh/</span>. I'm a software engineer.
 
 I'm part of [The Left Bit](https://www.theleftbit.com) and [Semantico](https://semantico.ai).
 
-I also co-created this non existing project [BeWelhome](https://bewelhome.com/) consisting of a landing and lots of conversations 🍺 around the product we could/would do.
+Lately I've been building [BOE Fácil](https://boefacil.com), which reads Spain's official gazette every morning and explains it in plain Spanish, so you don't have to.
 
-Once a year I help [LaGuiaDeMI](https://laguiademi.com) to maintain their website, it takes me 10 minutes every year.
+I also co-created [BeWelhome](https://bewelhome.com/), a project that never quite existed: one landing page and lots of conversations 🍺 about what it could be.
 
-Say [👋](mailto:hola@quique.info).
+Once a year I help [LaGuiaDeMI](https://laguiademi.com) with their website. It takes me 10 minutes. Every year.
+
+Say [👋 hola@quique.info](mailto:hola@quique.info).

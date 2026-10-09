@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="{{ description }}" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='5' y='2' width='6' height='12' fill='%23d9481c'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <article>
-      {{ content }}
-    </article>
+    <main>
+      <header><span>QUIQUE(1)</span><span>quique.info</span></header>
+      <article>
+        {{ content }}
+      </article>
+    </main>
   </body>
 </html>
