@@ -21,7 +21,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  font: 15px/1.75 "Atkinson Hyperlegible Mono", ui-monospace, monospace;
+  font: 15px/1.75 "IBM Plex Mono", ui-monospace, monospace;
 }
 
 main {
