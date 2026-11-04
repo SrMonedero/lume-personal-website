@@ -15,9 +15,9 @@ description: Software engineer. The Left Bit, Semantico, BOE Fácil.
 
 ## Projects
 
-- [BOE Fácil](https://boefacil.com) <span class="note">the BOE, every morning, in plain Spanish</span>
-- [BeWelhome](https://bewelhome.com/) <span class="note">a landing and lots of 🍺</span>
-- [LaGuiaDeMI](https://laguiademi.com) <span class="note">10 minutes a year</span>
+- [BOE Fácil](https://boefacil.com)
+- [BeWelhome](https://bewelhome.com/)
+- [LaGuiaDeMI](https://laguiademi.com)
 
 ## Contact
 
