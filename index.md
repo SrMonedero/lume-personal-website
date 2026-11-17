@@ -19,6 +19,11 @@ description: Software engineer. The Left Bit, Semantico, BOE Fácil.
 - [BeWelhome](https://bewelhome.com/)
 - [LaGuiaDeMI](https://laguiademi.com)
 
+## In progress
+
+- [krdb](https://krdb.quique.info)
+- [Sobremesa](https://sobremesa.quique.info)
+
 ## Contact
 
 [hola@quique.info](mailto:hola@quique.info)
