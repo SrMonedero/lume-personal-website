@@ -1,175 +1,173 @@
 # Design system
 
-Reglas para cualquier interfaz generada en este proyecto. Son obligatorias: si algo no encaja, propón un cambio aquí en vez de saltártelas.
+Rules for any interface generated in this project. They are mandatory: if something doesn't fit, propose a change here instead of skipping them.
 
-## Tipografía
+## Typography
 
-Pareja "Accesible": Atkinson Hyperlegible Next para todo (titulares, texto e interfaz) + Atkinson Hyperlegible Mono para datos y etiquetas. Atkinson está diseñada por el Braille Institute para máxima legibilidad: letras que no se confunden (I/l/1, O/0). Valores en `tokens/typography.css`.
+The "Accessible" pairing: Atkinson Hyperlegible Next for everything (headings, text and UI) + Atkinson Hyperlegible Mono for data and labels. Atkinson was designed by the Braille Institute for maximum legibility: letters that can't be confused (I/l/1, O/0). Values in `globals.css`.
 
-### Uso
-- Titulares (hero, h1, h2): `font-display`, peso 700, tracking -0.02em.
-- Texto e interfaz: `font-sans`. Pesos permitidos: 400 (texto), 500 (botones, etiquetas, navegación), 600 (énfasis, títulos de tarjeta) y 700 (solo titulares).
-- Jerarquía en interfaz primero con tamaño y color (`text-fg` / `text-fg-muted`); el peso como apoyo.
-- Horas, IDs, códigos y etiquetas en mayúsculas: `font-mono text-xs uppercase tracking-wider`.
-- Tablas, precios y contadores: `tabular-nums`.
-- Párrafos: `max-w-[65ch]`, interlineado 1.55. No centres párrafos de más de dos líneas.
-- Tamaño mínimo de texto: 14px (`text-sm`). `text-xs` solo para etiquetas en mono.
+### Usage
+- Headings (hero, h1, h2): `font-display`, weight 700, tracking -0.02em.
+- Text and UI: `font-sans`. Allowed weights: 400 (text), 500 (buttons, labels, navigation), 600 (emphasis, card titles) and 700 (headings only).
+- Hierarchy in UI comes from size and color first (`text-fg` / `text-fg-muted`); weight as support.
+- Times, IDs, codes and uppercase labels: `font-mono text-xs uppercase tracking-wider`.
+- Tables, prices and counters: `tabular-nums`.
+- Paragraphs: `max-w-[65ch]`, line height 1.55. Don't center paragraphs longer than two lines.
+- Minimum text size: 14px (`text-sm`). `text-xs` only for mono labels.
 
-### Escala (usa SOLO estos tamaños)
+### Scale (use ONLY these sizes)
 - text-display-2xl: 64px / 66px (font-display)
 - text-display-xl: 48px / 49px (font-display)
 - text-display-lg: 36px / 40px (font-display)
 - text-heading: 28px / 32px (font-display)
-- text-title: 20px / 28px, peso 600
+- text-title: 20px / 28px, weight 600
 - text-lg: 18px / 28px
 - text-base: 16px / 24px
 - text-sm: 14px / 20px
-- text-xs: 12px / 16px (mono, etiquetas)
+- text-xs: 12px / 16px (mono, labels)
 
-No uses tamaños arbitrarios (`text-[17px]`). Si hace falta uno nuevo, propónlo y añádelo aquí.
+Don't use arbitrary sizes (`text-[17px]`). If a new one is needed, propose it and add it here.
 
-### Prohibido
-- Inter, Roboto o system-ui como fuente visible.
-- `font-light` y más finos en texto de interfaz; `font-extrabold` y `font-black`.
-- Más de tres pesos distintos en una misma pantalla.
-- Texto con degradado (`bg-clip-text`).
-- Emojis en títulos, botones o etiquetas.
-- Texto de cuerpo por debajo de 14px.
+### Forbidden
+- Inter, Roboto or system-ui as a visible font.
+- `font-light` and thinner in UI text; `font-extrabold` and `font-black`.
+- More than three different weights on one screen.
+- Gradient text (`bg-clip-text`).
+- Emojis in headings, buttons or labels.
+- Body text under 14px.
 
 ## Color
 
-Neutro "Papel" (gris con matiz 85°, tinte 8) + acento "Cian" (#0099C6). Modo claro y oscuro con los mismos tokens; valores en `globals.css`.
+Neutral "Papel" (gray with an 85° hue, tint 8) + accent "Cian" (#0099C6). Light and dark mode with the same tokens; values in `globals.css`.
 
-### Tokens semánticos (usa SOLO estos)
-- Fondos: `bg` (página), `surface` (paneles, tarjetas, tablas).
-- Bordes: `line` (separadores), `line-strong` (inputs, botones secundarios).
-- Texto: `fg` (principal), `fg-muted` (secundario), `fg-subtle` (labels, metadatos).
-- Acento: `accent` (fondo del botón principal), `accent-hover`, `accent-fg` (texto sobre accent), `accent-soft` (fila seleccionada, resaltado), `accent-text` (enlaces, palabras destacadas, foco).
-- Estados: `success`, `warning`, `danger` y sus `*-soft` para fondos.
+### Semantic tokens (use ONLY these)
+- Backgrounds: `bg` (page), `surface` (panels, cards, tables).
+- Borders: `line` (dividers), `line-strong` (inputs, secondary buttons).
+- Text: `fg` (primary), `fg-muted` (secondary), `fg-subtle` (labels, metadata).
+- Accent: `accent` (primary button background), `accent-hover`, `accent-fg` (text on accent), `accent-soft` (selected row, highlight), `accent-text` (links, highlighted words, focus).
+- States: `success`, `warning`, `danger` and their `*-soft` variants for backgrounds.
 
-### Uso
-- Neutros para el 90% de la pantalla. El acento solo en: la acción principal, la selección, el foco y algún detalle puntual.
-- Una sola acción con `bg-accent` por vista.
-- Para texto en color usa siempre `text-accent-text`, nunca `text-accent`.
-- El texto sobre `bg-accent` es oscuro (`text-accent-fg`), nunca blanco.
-- El acento tiene poco contraste con el fondo: el botón principal lleva siempre `border border-line-strong` en modo claro.
-- Estados con fondo suave + texto, y siempre con palabra o icono además del color.
+### Usage
+- Neutrals for 90% of the screen. The accent only on: the primary action, selection, focus and the odd detail.
+- A single `bg-accent` action per view.
+- For colored text always use `text-accent-text`, never `text-accent`.
+- Text on `bg-accent` is dark (`text-accent-fg`), never white.
+- The accent has low contrast against the background: the primary button always gets `border border-line-strong` in light mode.
+- States use a soft background + text, and always a word or icon besides the color.
 
-### Prohibido
-- Clases de la paleta por defecto de Tailwind (`slate-*`, `gray-*`, `blue-*`, `purple-*`…). No existen en este proyecto.
-- Degradados de cualquier tipo.
-- Colores hex sueltos en componentes.
+### Forbidden
+- Tailwind's default palette classes (`slate-*`, `gray-*`, `blue-*`, `purple-*`…). They don't exist in this project.
+- Gradients of any kind.
+- Loose hex colors in components.
 
-## Espaciado, radios y bordes
+## Spacing, radii and borders
 
-Densidad "Normal", radio 6px, separación "Líneas", sombras "Solo lo que flota".
+"Normal" density, 6px radius, "Lines" separation, "Only what floats" shadows. Values in `globals.css`.
 
-Valores en `tokens/space.css`.
+### Spacing
+- 4px base. Use only Tailwind's scale in multiples of 4 (`1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24`). No `p-[13px]` or `mt-7`.
+- Semantic tokens (use them instead of loose numbers):
+  - `control-h`: 40px. Height of buttons, inputs and selects.
+  - `control-x`: 14px. Horizontal button padding.
+  - `card-p`: 24px. Inner padding of cards, modals and panels.
+  - `stack`: 16px. Gap between form fields.
+  - `gap`: 20px. Gap between cards or columns.
+  - `row-h`: 44px. Row height in tables and lists.
+  - `section`: 80px. Vertical gap between page sections.
+- Less space inside a component than between components. Between sections, much more (`section`).
+- Reading content with a max width (`max-w-[65ch]`); app layouts up to `max-w-7xl`.
 
-### Espaciado
-- Base de 4px. Usa solo la escala de Tailwind en múltiplos de 4 (`1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24`). Nada de `p-[13px]` ni `mt-7`.
-- Tokens semánticos (úsalos en vez de números sueltos):
-  - `control-h`: 40px. Altura de botones, inputs y selects.
-  - `control-x`: 14px. Padding horizontal de botones.
-  - `card-p`: 24px. Padding interior de tarjetas, modales y paneles.
-  - `stack`: 16px. Separación entre campos de un formulario.
-  - `gap`: 20px. Separación entre tarjetas o columnas.
-  - `row-h`: 44px. Altura de fila en tablas y listas.
-  - `section`: 80px. Separación vertical entre secciones de una página.
-- Dentro de un componente, menos espacio que entre componentes. Entre secciones, mucho más (`section`).
-- Contenido de lectura con ancho máximo (`max-w-[65ch]`); layouts de app hasta `max-w-7xl`.
+### Radii
+- `rounded-sm` (3px): tags, checkboxes, menu items.
+- `rounded` (6px): inputs, menus and buttons.
+- `rounded-lg` (9px): cards and modals.
+- Don't mix radii outside these three. Nested elements: the inner one is never rounder than the outer one.
 
-### Radios
-- `rounded-sm` (3px): Etiquetas, checkboxes, items de menú.
-- `rounded` (6px): Inputs, menús y botones.
-- `rounded-lg` (9px): Tarjetas y modales.
-- No mezcles radios fuera de estos tres. Elementos anidados: el interior nunca más redondo que el exterior.
+### Borders and separation
+- Separate with 1px borders (`border border-line`). Cards use `bg-surface` and a border; no colored backgrounds to separate things.
 
-### Bordes y separación
-- Separa con bordes de 1px (`border border-line`). Las tarjetas usan `bg-surface` y borde; nada de fondos de color para separar.
+### Shadows
+- No shadows on cards. Only what floats (menus, popovers, modals, toasts) uses `shadow-float`.
 
-### Sombras
-- Sin sombras en tarjetas. Solo lo que flota (menús, popovers, modales, toasts) usa `shadow-float`.
-
-### Prohibido
-- `rounded-2xl`, `rounded-3xl` o `rounded-full` en tarjetas y botones.
+### Forbidden
+- `rounded-2xl`, `rounded-3xl` or `rounded-full` on cards and buttons.
 - `shadow-md`, `shadow-lg`, `shadow-xl`, `shadow-2xl`.
-- Tarjetas dentro de tarjetas con borde y sombra a la vez.
-- Espaciado uniforme en toda la página: la jerarquía también se construye con el espacio.
+- Cards inside cards with both border and shadow.
+- Uniform spacing across the whole page: hierarchy is also built with space.
 
-## Componentes
+## Components
 
-Usa siempre estas recetas. Si un componente no está aquí, constrúyelo con los mismos tokens y propón añadirlo.
+Always use these recipes. If a component isn't here, build it with the same tokens and propose adding it.
 
-### Botones
-- Principal: "Relleno de acento". Uno solo por vista.
-- Secundario: "Tono". Fantasma para acciones terciarias (cerrar, cancelar en barras).
-- Peligro: fondo `danger`, solo para confirmar acciones destructivas (normalmente dentro de un modal).
-- Con icono: icono de 16px a la izquierda del texto. Botón solo icono: cuadrado (`w-control`) y siempre con `aria-label`.
-- Cargando: spinner de 14px + texto en gerundio ("Guardando…"), botón desactivado.
-- Tamaños: normal (`h-control`, 40px) y pequeño (32px) para tablas y barras. No hay botón grande.
+### Buttons
+- Primary: "Accent fill". Only one per view.
+- Secondary: "Tone". Ghost for tertiary actions (close, cancel in toolbars).
+- Danger: `danger` background, only to confirm destructive actions (usually inside a modal).
+- With icon: 16px icon to the left of the text. Icon-only button: square (`w-control`) and always with `aria-label`.
+- Loading: 14px spinner + "-ing" text ("Saving…"), button disabled.
+- Sizes: normal (`h-control`, 40px) and small (32px) for tables and toolbars. There is no large button.
 
-### Formularios
-- Inputs: "Relleno". Label encima, siempre visible (nunca solo placeholder), `text-sm font-medium`.
-- Ayuda debajo en `text-sm text-fg-subtle`. Error: borde `danger` + mensaje con icono debajo. Nunca solo color.
-- Checkbox, radio y switch: "Acento". Switch solo para ajustes que se aplican al momento; checkbox para formularios con "Guardar".
+### Forms
+- Inputs: "Filled". Label above, always visible (never just a placeholder), `text-sm font-medium`.
+- Help text below in `text-sm text-fg-subtle`. Error: `danger` border + message with an icon below. Never color alone.
+- Checkbox, radio and switch: "Accent". Switch only for settings that apply instantly; checkbox for forms with a "Save" button.
 
-### Foco
-- "Anillo de acento" en todo elemento interactivo con `:focus-visible`. Nunca `outline-none` sin alternativa.
+### Focus
+- "Accent ring" on every interactive element with `:focus-visible`. Never `outline-none` without an alternative.
 
-### Datos
-- Tablas: "Cebra". Cabecera en mono mayúsculas pequeña. Horas e IDs en mono. Cifras alineadas a la derecha con `tabular-nums`. Fila seleccionada con `bg-accent-soft` y una barra de 2px a la izquierda.
-- Etiquetas de estado: "Fondo suave". Siempre con texto, no solo color.
-- Pestañas: "Subrayado". Con contador en mono si aporta.
+### Data
+- Tables: "Zebra". Small uppercase mono header. Times and IDs in mono. Figures right-aligned with `tabular-nums`. Selected row with `bg-accent-soft` and a 2px bar on the left.
+- Status tags: "Soft background". Always with text, never just color.
+- Tabs: "Underline". With a mono counter when useful.
 
-### Avisos y flotantes
-- Avisos en página: "Fondo suave".
-- Menús, popovers, modales y toasts: `bg-surface` + borde + `shadow-float` (los toasts, en tinta: `bg-fg text-bg`).
-- Modales destructivos: título en pregunta concreta ("¿Cancelar la reserva de X?"), texto con la consecuencia, botones "Mantener" + acción en `danger`.
+### Alerts and floating elements
+- In-page alerts: "Soft background".
+- Menus, popovers, modals and toasts: `bg-surface` + border + `shadow-float` (toasts in ink: `bg-fg text-bg`).
+- Destructive modals: title as a concrete question ("Cancel X's booking?"), text with the consequence, buttons "Keep it" + the action in `danger`.
 
-### Iconos
-- Librería: Phosphor (`@phosphor-icons/react`), estilo regular. 16px en botones y menús, 18–20px sueltos. Color heredado del texto.
-- Nunca iconos dentro de cuadrados o círculos de color. Nunca emojis como iconos.
-- No mezcles librerías.
+### Icons
+- Library: Phosphor (`@phosphor-icons/react`), regular style. 16px in buttons and menus, 18–20px standalone. Color inherited from the text.
+- Never icons inside colored squares or circles. Never emojis as icons.
+- Don't mix libraries.
 
-### Copy en componentes
-- Botones con verbo + objeto: "Guardar reserva", "Enviar SMS". Nada de "Enviar", "OK" o "Sí".
-- Mensajes concretos con datos reales ("Reserva movida a M4"), no genéricos ("¡Operación realizada con éxito!").
-- Sin signos de exclamación ni emojis.
+### Component copy
+- Buttons with verb + object: "Save booking", "Send SMS". No "Submit", "OK" or "Yes".
+- Concrete messages with real data ("Booking moved to T4"), not generic ones ("Operation completed successfully!").
+- No exclamation marks or emojis.
 
-### Recetas Tailwind
+### Tailwind recipes
 
-Clases exactas para cada componente (`bg-line/55` es el gris de relleno).
+Exact classes for each component (`bg-line/55` is the fill gray).
 
 ```
-/* Recetas Tailwind v4 — usan los tokens de tokens/*.css */
+/* Tailwind v4 recipes — they use the tokens in globals.css */
 
-BOTÓN (base)    inline-flex items-center justify-center gap-2 h-control px-control-x rounded text-sm font-medium whitespace-nowrap transition-colors disabled:opacity-45 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-text
-  principal     bg-accent text-accent-fg border border-line-strong dark:border-accent hover:bg-accent-hover
-  secundario    bg-line/55 text-fg hover:bg-line
-  fantasma      text-fg-muted hover:bg-line/55 hover:text-fg
-  peligro       bg-danger text-bg hover:brightness-95
-  solo icono    w-control px-0
-  pequeño       h-8 px-2.5 text-[13px]
+BUTTON (base)   inline-flex items-center justify-center gap-2 h-control px-control-x rounded text-sm font-medium whitespace-nowrap transition-colors disabled:opacity-45 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-text
+  primary       bg-accent text-accent-fg border border-line-strong dark:border-accent hover:bg-accent-hover
+  secondary     bg-line/55 text-fg hover:bg-line
+  ghost         text-fg-muted hover:bg-line/55 hover:text-fg
+  danger        bg-danger text-bg hover:brightness-95
+  icon only     w-control px-0
+  small         h-8 px-2.5 text-[13px]
 
 INPUT           h-control w-full text-[15px] text-fg placeholder:text-fg-subtle disabled:opacity-50 px-3 rounded border border-transparent bg-line/55 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-text
-  error         border-danger bg-danger-soft  + mensaje: text-sm text-danger con icono
+  error         border-danger bg-danger-soft  + message: text-sm text-danger with icon
   label         text-sm font-medium
-  ayuda         text-sm text-fg-subtle
-CHECKBOX        size-[18px] appearance-none rounded-sm border border-line-strong bg-bg checked:bg-accent checked:border-accent-text (marca en text-accent-fg)
-SWITCH activo   bg-accent border border-accent-text (pomo bg-accent-fg)
+  help          text-sm text-fg-subtle
+CHECKBOX        size-[18px] appearance-none rounded-sm border border-line-strong bg-bg checked:bg-accent checked:border-accent-text (check mark in text-accent-fg)
+SWITCH on       bg-accent border border-accent-text (knob bg-accent-fg)
 
-TABLA           w-full text-sm tabular-nums · contenedor: border border-line rounded-lg bg-surface overflow-auto
+TABLE           w-full text-sm tabular-nums · container: border border-line rounded-lg bg-surface overflow-auto
   th            h-9 px-4 text-left font-mono text-[10.5px] uppercase tracking-wider text-fg-subtle font-normal border-b border-line
   tr            even:bg-line/55 hover:bg-accent-soft
-  td            h-row px-4 whitespace-nowrap · horas e IDs: font-mono text-fg-muted
-ETIQUETA        inline-flex items-center px-2 py-0.5 rounded-sm text-xs font-medium · ok: bg-success-soft text-success · aviso: bg-warning-soft text-warning · error: bg-danger-soft text-danger · neutro: bg-line/55 text-fg-muted
-PESTAÑAS        lista: flex gap-6 border-b border-line · pestaña: h-10 -mb-px border-b-2 border-transparent text-sm font-medium text-fg-muted aria-selected:border-fg aria-selected:text-fg
+  td            h-row px-4 whitespace-nowrap · times and IDs: font-mono text-fg-muted
+TAG             inline-flex items-center px-2 py-0.5 rounded-sm text-xs font-medium · ok: bg-success-soft text-success · warning: bg-warning-soft text-warning · error: bg-danger-soft text-danger · neutral: bg-line/55 text-fg-muted
+TABS            list: flex gap-6 border-b border-line · tab: h-10 -mb-px border-b-2 border-transparent text-sm font-medium text-fg-muted aria-selected:border-fg aria-selected:text-fg
 
-AVISO           flex gap-3 items-start px-3.5 py-3 text-sm · título font-semibold · texto text-fg-muted · rounded · error: bg-danger-soft · aviso: bg-warning-soft · ok: bg-success-soft · info: bg-accent-soft · icono del color del estado
-MENÚ            bg-surface border border-line rounded shadow-float p-1.5 min-w-60 · item: flex items-center gap-2.5 px-2.5 py-2 rounded-sm text-sm hover:bg-accent-soft · destructivo: text-danger
-MODAL           fondo: bg-fg/30 · panel: bg-surface border border-line rounded-lg shadow-float max-w-md · cabecera p-card pb-2 (título text-xl font-semibold) · pie: flex justify-end gap-2 p-card pt-5
-TOAST           bg-fg text-bg rounded shadow-float px-3.5 py-2.5 text-sm flex items-center gap-3 · acción: botón texto subrayado
+ALERT           flex gap-3 items-start px-3.5 py-3 text-sm · title font-semibold · text text-fg-muted · rounded · error: bg-danger-soft · warning: bg-warning-soft · ok: bg-success-soft · info: bg-accent-soft · icon in the state color
+MENU            bg-surface border border-line rounded shadow-float p-1.5 min-w-60 · item: flex items-center gap-2.5 px-2.5 py-2 rounded-sm text-sm hover:bg-accent-soft · destructive: text-danger
+MODAL           backdrop: bg-fg/30 · panel: bg-surface border border-line rounded-lg shadow-float max-w-md · header p-card pb-2 (title text-xl font-semibold) · footer: flex justify-end gap-2 p-card pt-5
+TOAST           bg-fg text-bg rounded shadow-float px-3.5 py-2.5 text-sm flex items-center gap-3 · action: underlined text button
 
-ICONOS          @phosphor-icons/react · size 16 en botones, 18–20 sueltos
+ICONS           @phosphor-icons/react · size 16 in buttons, 18–20 standalone
 ```

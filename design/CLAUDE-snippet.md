@@ -1,7 +1,7 @@
-## Diseño
+## Design
 
-Antes de crear o modificar cualquier interfaz, lee `DESIGN.md` y síguelo al pie de la letra.
-- Usa solo los tokens definidos en `globals.css` (colores, tamaños, espaciado, radios). La paleta por defecto de Tailwind no existe.
-- Copia las recetas de componentes de `DESIGN.md`; no inventes estilos nuevos.
-- Iconos: Phosphor (`@phosphor-icons/react`). Nunca Lucide, nunca emojis.
-- Si algo no encaja con el design system, para y propón el cambio en `DESIGN.md` en vez de saltártelo.
+Before creating or changing any interface, read `DESIGN.md` and follow it to the letter.
+- Use only the tokens defined in `globals.css` (colors, sizes, spacing, radii). Tailwind's default palette doesn't exist.
+- Copy the component recipes from `DESIGN.md`; don't invent new styles.
+- Icons: Phosphor (`@phosphor-icons/react`). Never Lucide, never emojis.
+- If something doesn't fit the design system, stop and propose the change in `DESIGN.md` instead of skipping it.

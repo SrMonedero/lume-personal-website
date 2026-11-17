@@ -1,6 +1,6 @@
 /* globals.css — Tailwind v4 · Design system v0
-   Papel + Cian · Atkinson Hyperlegible Next + Mono · Normal / radio 6 / líneas / sombras solo en flotantes
-   Fuentes (en el <head> o con next/font/google):
+   Papel + Cian · Atkinson Hyperlegible Next + Mono · Normal / radius 6 / lines / shadows only on floating elements
+   Fonts (in the <head> or via next/font/google):
    https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Mono:wght@200..800&display=swap
 */
 @import "tailwindcss";
@@ -51,7 +51,7 @@
 }
 
 @theme inline {
-  /* Color: borra la paleta por defecto; solo existen estos tokens */
+  /* Color: wipes the default palette; only these tokens exist */
   --color-*: initial;
   --color-white: #fff;
   --color-transparent: transparent;
@@ -75,13 +75,13 @@
   --color-danger: var(--danger);
   --color-danger-soft: var(--danger-soft);
 
-  /* Sombras: solo para lo que flota */
+  /* Shadows: only for what floats */
   --shadow-*: initial;
   --shadow-float: var(--shadow-float-value);
 }
 
 @theme {
-  /* Tipografía */
+  /* Typography */
   --font-*: initial;
   --font-display: "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans-serif;
@@ -98,7 +98,7 @@
   --text-display-xl: 3rem;     --text-display-xl--line-height: 3.0625rem; --text-display-xl--letter-spacing: -0.02em;
   --text-display-2xl: 4rem;    --text-display-2xl--line-height: 4.125rem; --text-display-2xl--letter-spacing: -0.02em;
 
-  /* Espaciado: base 4px + tokens semánticos (h-control, p-card, gap-stack, h-row, py-section…) */
+  /* Spacing: 4px base + semantic tokens (h-control, p-card, gap-stack, h-row, py-section…) */
   --spacing: 0.25rem;
   --spacing-control: 2.5rem;
   --spacing-control-x: 0.875rem;
@@ -108,7 +108,7 @@
   --spacing-row: 2.75rem;
   --spacing-section: 5rem;
 
-  /* Radios */
+  /* Radii */
   --radius-*: initial;
   --radius-sm: 3px;
   --radius: 6px;

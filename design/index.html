@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Papel + Cian · Design system</title>
-<meta name="description" content="Design system para que las interfaces hechas con IA no parezcan hechas con IA. Atkinson Hyperlegible, neutro Papel y acento Cian.">
+<meta name="description" content="A design system so that interfaces built with AI don't look built with AI. Atkinson Hyperlegible, warm Papel neutrals and a Cian accent.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='2' y='2' width='12' height='12' rx='2' fill='%23F5F2EC' stroke='%23C5C2BC'/><rect x='5' y='5' width='6' height='6' rx='1' fill='%230099C6'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,7 +88,7 @@ section.s { padding: 80px 0; border-bottom: 1px solid var(--line); scroll-margin
 .rules li + li { margin-top: 6px; }
 .rules .no h3 i { color: var(--danger); } .rules .yes h3 i { color: var(--success); }
 
-/* Tipografía */
+/* Typography */
 .scale { border-top: 1px solid var(--line); }
 .scale .row { display: grid; grid-template-columns: 180px 1fr; gap: 20px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--line); }
 .scale .row .meta { font-family: var(--mono); font-size: 12px; color: var(--fg-subtle); line-height: 18px; }
@@ -121,7 +121,7 @@ section.s { padding: 80px 0; border-bottom: 1px solid var(--line); scroll-margin
 .ratio { display: flex; height: 40px; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); margin-top: 24px; }
 .ratio div { display: flex; align-items: center; padding: 0 12px; font-family: var(--mono); font-size: 12px; }
 
-/* Espaciado */
+/* Spacing */
 .spaces .row { display: grid; grid-template-columns: 140px 1fr 60px; gap: 16px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .spaces .row:first-child { border-top: 1px solid var(--line); }
 .spaces .bar { height: 12px; background: var(--accent-soft); border-left: 2px solid var(--accent-text); }
@@ -132,7 +132,7 @@ section.s { padding: 80px 0; border-bottom: 1px solid var(--line); scroll-margin
 .float-demo { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
 .float-demo > div { padding: 16px; border-radius: 9px; font-size: 14px; color: var(--fg-muted); }
 
-/* Componentes */
+/* Components */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 14px; border-radius: 6px; font: 500 14px/1 var(--sans); white-space: nowrap; cursor: pointer; border: 1px solid transparent; text-decoration: none; transition: background-color .15s, color .15s; }
 .btn i { font-size: 16px; }
 .btn.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--btn-primary-border); }
@@ -216,7 +216,7 @@ td.r, th.r { text-align: right; }
 .toast button { background: none; border: 0; color: inherit; font: 500 14px var(--sans); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; padding: 0; }
 .floats { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
 
-/* Usar */
+/* Use */
 .files { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 .files .card { padding: 24px; display: flex; flex-direction: column; gap: 10px; }
 .files h3 { font-size: 16px; line-height: 24px; font-weight: 600; letter-spacing: 0; font-family: var(--mono); }
@@ -232,74 +232,74 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 
 <header class="top"><div class="wrap">
   <a class="home" href="/">← quique.info</a>
-  <button class="btn ghost sm" id="theme" type="button" aria-label="Cambiar tema"><i class="ph ph-circle-half"></i><span>Tema</span></button>
+  <button class="btn ghost sm" id="theme" type="button" aria-label="Switch theme"><i class="ph ph-circle-half"></i><span>Theme</span></button>
 </div></header>
 
 <div class="hero"><div class="wrap">
-  <div class="label">Design system · v0 · noviembre 2026</div>
+  <div class="label">Design system · v0 · November 2026</div>
   <h1>Papel + Cian</h1>
-  <p>Un design system pequeño para que las interfaces hechas con IA no parezcan hechas con IA. Nada de Inter, degradados morados, emojis ni tarjetas con <code>rounded-2xl</code> y sombra. La pieza principal es <code>DESIGN.md</code>, un archivo de reglas que Claude, Cursor y compañía leen antes de tocar una pantalla.</p>
+  <p>A small design system so that interfaces built with AI don't look built with AI. No Inter, no purple gradients, no emojis, no cards with <code>rounded-2xl</code> and a shadow. The main piece is <code>DESIGN.md</code>, a rules file that Claude, Cursor and friends read before touching a screen.</p>
   <div class="actions">
-    <a class="btn primary" href="DESIGN.md" download><i class="ph ph-download-simple"></i>Descargar DESIGN.md</a>
-    <a class="btn secondary" href="globals.css" download><i class="ph ph-file-css"></i>Descargar globals.css</a>
-    <a class="btn ghost" href="#usar">Cómo usarlo</a>
+    <a class="btn primary" href="DESIGN.md" download><i class="ph ph-download-simple"></i>Download DESIGN.md</a>
+    <a class="btn secondary" href="globals.css" download><i class="ph ph-file-css"></i>Download globals.css</a>
+    <a class="btn ghost" href="#use">How to use it</a>
   </div>
 </div></div>
 
-<nav class="toc" aria-label="Secciones"><div class="wrap">
-  <a href="#tipografia">Tipografía</a>
+<nav class="toc" aria-label="Sections"><div class="wrap">
+  <a href="#type">Typography</a>
   <a href="#color">Color</a>
-  <a href="#espaciado">Espaciado</a>
-  <a href="#componentes">Componentes</a>
-  <a href="#usar">Usarlo</a>
+  <a href="#spacing">Spacing</a>
+  <a href="#components">Components</a>
+  <a href="#use">Use it</a>
 </div></nav>
 
 <main>
 
-<section class="s" id="tipografia"><div class="wrap">
+<section class="s" id="type"><div class="wrap">
   <div class="s-head">
-    <div class="label">01 · Tipografía</div>
-    <h2>Una sola familia, pensada para leerse</h2>
-    <p>Atkinson Hyperlegible Next para todo y su versión Mono para datos y etiquetas. La diseñó el Braille Institute para que ninguna letra se confunda con otra: I, l y 1 son distintas; O y 0 también.</p>
+    <div class="label">01 · Typography</div>
+    <h2>One family, made to be read</h2>
+    <p>Atkinson Hyperlegible Next for everything, and its Mono sibling for data and labels. The Braille Institute designed it so no letter gets mistaken for another: I, l and 1 are distinct; so are O and 0.</p>
   </div>
 
   <div class="pair">
     <div class="card">
-      <div class="label">Sans · titulares, texto e interfaz</div>
+      <div class="label">Sans · headings, text and UI</div>
       <div class="big" style="font-weight:700;letter-spacing:-.02em">Il1 O0 rn</div>
-      <div class="glyphs">Aa Bb Cc Ññ Gg Qq 0123456789 ¿?¡!</div>
-      <div class="weights"><span style="font-weight:400">400 texto</span><span style="font-weight:500">500 botones</span><span style="font-weight:600">600 énfasis</span><span style="font-weight:700">700 titulares</span></div>
+      <div class="glyphs">Aa Bb Cc Ññ Gg Qq 0123456789 ?!&amp;</div>
+      <div class="weights"><span style="font-weight:400">400 text</span><span style="font-weight:500">500 buttons</span><span style="font-weight:600">600 emphasis</span><span style="font-weight:700">700 headings</span></div>
     </div>
     <div class="card">
-      <div class="label">Mono · horas, IDs, códigos</div>
+      <div class="label">Mono · times, IDs, codes</div>
       <div class="big mono" style="font-size:40px">09:45 #A-1024</div>
       <div class="glyphs mono" style="font-size:17px">Il1 O0 {} [] =&gt; 0x00FF</div>
-      <div class="weights"><span class="label" style="color:var(--fg-muted)">Etiquetas en mayúsculas</span><span class="mono" style="font-variant-numeric:tabular-nums">1.234,50 €</span></div>
+      <div class="weights"><span class="label" style="color:var(--fg-muted)">Uppercase labels</span><span class="mono" style="font-variant-numeric:tabular-nums">€1,234.50</span></div>
     </div>
   </div>
 
   <div class="scale">
-    <div class="row"><div class="meta"><b>display-2xl</b>64 / 66 · 700</div><div class="sample" style="font-size:64px;line-height:66px;font-weight:700;letter-spacing:-.02em">Buenos días</div></div>
-    <div class="row"><div class="meta"><b>display-xl</b>48 / 49 · 700</div><div class="sample" style="font-size:48px;line-height:49px;font-weight:700;letter-spacing:-.02em">Reservas de hoy</div></div>
-    <div class="row"><div class="meta"><b>display-lg</b>36 / 40 · 700</div><div class="sample" style="font-size:36px;line-height:40px;font-weight:700;letter-spacing:-.02em">Catálogo de primavera</div></div>
-    <div class="row"><div class="meta"><b>heading</b>28 / 32 · 700</div><div class="sample" style="font-size:28px;line-height:32px;font-weight:700;letter-spacing:-.02em">Pedidos pendientes</div></div>
-    <div class="row"><div class="meta"><b>title</b>20 / 28 · 600</div><div class="sample" style="font-size:20px;line-height:28px;font-weight:600">Mesa 12 · cuatro personas</div></div>
-    <div class="row"><div class="meta"><b>lg</b>18 / 28</div><div class="sample" style="font-size:18px;line-height:28px">Texto de entrada para introducciones y destacados.</div></div>
-    <div class="row"><div class="meta"><b>base</b>16 / 24</div><div class="sample">Texto de cuerpo. Párrafos de 65 caracteres como máximo, con interlineado 1.55 y nunca centrados si pasan de dos líneas.</div></div>
-    <div class="row"><div class="meta"><b>sm</b>14 / 20</div><div class="sample" style="font-size:14px;line-height:20px;color:var(--fg-muted)">Texto de interfaz, ayudas y tablas. El mínimo para texto normal.</div></div>
-    <div class="row"><div class="meta"><b>xs</b>12 / 16 · mono</div><div class="sample label">Solo etiquetas en mono</div></div>
+    <div class="row"><div class="meta"><b>display-2xl</b>64 / 66 · 700</div><div class="sample" style="font-size:64px;line-height:66px;font-weight:700;letter-spacing:-.02em">Good morning</div></div>
+    <div class="row"><div class="meta"><b>display-xl</b>48 / 49 · 700</div><div class="sample" style="font-size:48px;line-height:49px;font-weight:700;letter-spacing:-.02em">Today's bookings</div></div>
+    <div class="row"><div class="meta"><b>display-lg</b>36 / 40 · 700</div><div class="sample" style="font-size:36px;line-height:40px;font-weight:700;letter-spacing:-.02em">Spring catalog</div></div>
+    <div class="row"><div class="meta"><b>heading</b>28 / 32 · 700</div><div class="sample" style="font-size:28px;line-height:32px;font-weight:700;letter-spacing:-.02em">Pending orders</div></div>
+    <div class="row"><div class="meta"><b>title</b>20 / 28 · 600</div><div class="sample" style="font-size:20px;line-height:28px;font-weight:600">Table 12 · four guests</div></div>
+    <div class="row"><div class="meta"><b>lg</b>18 / 28</div><div class="sample" style="font-size:18px;line-height:28px">Lead text for intros and highlights.</div></div>
+    <div class="row"><div class="meta"><b>base</b>16 / 24</div><div class="sample">Body text. Paragraphs of 65 characters at most, 1.55 line height, never centered if longer than two lines.</div></div>
+    <div class="row"><div class="meta"><b>sm</b>14 / 20</div><div class="sample" style="font-size:14px;line-height:20px;color:var(--fg-muted)">UI text, help text and tables. The minimum for regular text.</div></div>
+    <div class="row"><div class="meta"><b>xs</b>12 / 16 · mono</div><div class="sample label">Mono labels only</div></div>
   </div>
 
   <div class="rules">
-    <div class="card yes"><h3><i class="ph ph-check-circle"></i>Usa</h3><ul>
-      <li>Solo los nueve tamaños de la escala.</li>
-      <li>Jerarquía primero con tamaño y color; el peso como apoyo.</li>
-      <li><code>tabular-nums</code> en tablas, precios y contadores.</li>
+    <div class="card yes"><h3><i class="ph ph-check-circle"></i>Do</h3><ul>
+      <li>Only the nine sizes in the scale.</li>
+      <li>Hierarchy with size and color first; weight as support.</li>
+      <li><code>tabular-nums</code> in tables, prices and counters.</li>
     </ul></div>
-    <div class="card no"><h3><i class="ph ph-x-circle"></i>Prohibido</h3><ul>
-      <li>Inter, Roboto o system-ui visibles.</li>
-      <li>Pesos light, extrabold y black. Más de tres pesos por pantalla.</li>
-      <li>Texto con degradado, emojis en títulos o botones, cuerpo por debajo de 14px.</li>
+    <div class="card no"><h3><i class="ph ph-x-circle"></i>Don't</h3><ul>
+      <li>Inter, Roboto or system-ui as a visible font.</li>
+      <li>Light, extrabold or black weights. More than three weights per screen.</li>
+      <li>Gradient text, emojis in headings or buttons, body text under 14px.</li>
     </ul></div>
   </div>
 </div></section>
@@ -307,51 +307,51 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 <section class="s" id="color"><div class="wrap">
   <div class="s-head">
     <div class="label">02 · Color</div>
-    <h2>Neutro cálido y un solo acento</h2>
-    <p>"Papel" es un gris con matiz 85°, como papel sin blanquear. "Cian" (#0099C6) es el único color con intención: la acción principal, la selección y el foco. El resto de la pantalla es neutro.</p>
+    <h2>Warm neutrals and a single accent</h2>
+    <p>"Papel" (paper) is a gray with an 85° hue, like unbleached paper. "Cian" (cyan, #0099C6) is the only color with intent: the primary action, selection and focus. The rest of the screen is neutral.</p>
   </div>
 
-  <div class="label group-label">Neutros</div>
+  <div class="label group-label">Neutrals</div>
   <div class="swatches" data-sw="bg surface line line-strong fg fg-muted fg-subtle"></div>
-  <div class="label group-label">Acento</div>
+  <div class="label group-label">Accent</div>
   <div class="swatches" data-sw="accent accent-hover accent-fg accent-soft accent-text"></div>
-  <div class="label group-label">Estados</div>
+  <div class="label group-label">States</div>
   <div class="swatches" data-sw="success success-soft warning warning-soft danger danger-soft"></div>
 
-  <div class="ratio" aria-label="Proporción de uso: 90% neutros, 10% acento">
-    <div style="flex:9;background:var(--surface);color:var(--fg-subtle)">90% neutros</div>
+  <div class="ratio" aria-label="Usage ratio: 90% neutrals, 10% accent">
+    <div style="flex:9;background:var(--surface);color:var(--fg-subtle)">90% neutrals</div>
     <div style="flex:1;background:var(--accent);color:var(--accent-fg);border-left:1px solid var(--line)">10%</div>
   </div>
 
   <div class="modes">
-    <div class="mode light-vars"><div class="label">Modo claro</div>
-      <div class="mini"><b>Pedido #A-1024</b><p>Listo para enviar a las 17:30.</p><div class="row-wrap"><button class="btn primary sm" type="button">Enviar pedido</button><button class="btn secondary sm" type="button">Editar</button><span class="tag ok">Pagado</span></div></div>
+    <div class="mode light-vars"><div class="label">Light mode</div>
+      <div class="mini"><b>Order #A-1024</b><p>Ready to ship at 17:30.</p><div class="row-wrap"><button class="btn primary sm" type="button">Ship order</button><button class="btn secondary sm" type="button">Edit</button><span class="tag ok">Paid</span></div></div>
     </div>
-    <div class="mode dark-vars"><div class="label">Modo oscuro</div>
-      <div class="mini"><b>Pedido #A-1024</b><p>Listo para enviar a las 17:30.</p><div class="row-wrap"><button class="btn primary sm" type="button">Enviar pedido</button><button class="btn secondary sm" type="button">Editar</button><span class="tag ok">Pagado</span></div></div>
+    <div class="mode dark-vars"><div class="label">Dark mode</div>
+      <div class="mini"><b>Order #A-1024</b><p>Ready to ship at 17:30.</p><div class="row-wrap"><button class="btn primary sm" type="button">Ship order</button><button class="btn secondary sm" type="button">Edit</button><span class="tag ok">Paid</span></div></div>
     </div>
   </div>
 
   <div class="rules">
-    <div class="card yes"><h3><i class="ph ph-check-circle"></i>Usa</h3><ul>
-      <li>Una sola acción con <code>bg-accent</code> por vista.</li>
-      <li>Texto en color siempre con <code>accent-text</code>; sobre el acento, texto oscuro.</li>
-      <li>En claro, el botón principal lleva borde <code>line-strong</code>.</li>
-      <li>Estados con fondo suave y siempre con palabra o icono.</li>
+    <div class="card yes"><h3><i class="ph ph-check-circle"></i>Do</h3><ul>
+      <li>One <code>bg-accent</code> action per view.</li>
+      <li>Colored text always with <code>accent-text</code>; dark text on the accent.</li>
+      <li>In light mode, the primary button gets a <code>line-strong</code> border.</li>
+      <li>States with a soft background, always with a word or icon too.</li>
     </ul></div>
-    <div class="card no"><h3><i class="ph ph-x-circle"></i>Prohibido</h3><ul>
-      <li>La paleta por defecto de Tailwind (<code>slate</code>, <code>blue</code>, <code>purple</code>…). Ni existe.</li>
-      <li>Degradados de cualquier tipo.</li>
-      <li>Hex sueltos en componentes.</li>
+    <div class="card no"><h3><i class="ph ph-x-circle"></i>Don't</h3><ul>
+      <li>Tailwind's default palette (<code>slate</code>, <code>blue</code>, <code>purple</code>…). It doesn't even exist.</li>
+      <li>Gradients of any kind.</li>
+      <li>Loose hex values in components.</li>
     </ul></div>
   </div>
 </div></section>
 
-<section class="s" id="espaciado"><div class="wrap">
+<section class="s" id="spacing"><div class="wrap">
   <div class="s-head">
-    <div class="label">03 · Espaciado, radios y bordes</div>
-    <h2>Densidad normal, radio 6, líneas</h2>
-    <p>Base de 4px. Las cosas se separan con líneas de 1px, no con fondos de color ni sombras. Solo lleva sombra lo que flota.</p>
+    <div class="label">03 · Spacing, radii and borders</div>
+    <h2>Normal density, radius 6, lines</h2>
+    <p>4px base. Things are separated with 1px lines, not colored fills or shadows. Only what floats gets a shadow.</p>
   </div>
 
   <div class="grid2">
@@ -366,144 +366,144 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     </div>
     <div>
       <div class="radii">
-        <div class="r" style="border-radius:3px">sm · 3<br>etiquetas</div>
-        <div class="r" style="border-radius:6px">base · 6<br>botones</div>
-        <div class="r" style="border-radius:9px">lg · 9<br>tarjetas</div>
+        <div class="r" style="border-radius:3px">sm · 3<br>tags</div>
+        <div class="r" style="border-radius:6px">base · 6<br>buttons</div>
+        <div class="r" style="border-radius:9px">lg · 9<br>cards</div>
       </div>
       <div class="float-demo">
-        <div style="background:var(--surface);border:1px solid var(--line)">Tarjeta: superficie + borde, sin sombra.</div>
-        <div style="background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-float)">Menú, modal, toast: <code>shadow-float</code>.</div>
+        <div style="background:var(--surface);border:1px solid var(--line)">Card: surface + border, no shadow.</div>
+        <div style="background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-float)">Menu, modal, toast: <code>shadow-float</code>.</div>
       </div>
     </div>
   </div>
 
   <div class="rules">
-    <div class="card yes"><h3><i class="ph ph-check-circle"></i>Usa</h3><ul>
-      <li>Múltiplos de 4 y los tokens semánticos de arriba.</li>
-      <li>Menos espacio dentro de un componente que entre componentes.</li>
-      <li>Lo interior nunca más redondo que lo exterior.</li>
+    <div class="card yes"><h3><i class="ph ph-check-circle"></i>Do</h3><ul>
+      <li>Multiples of 4 and the semantic tokens above.</li>
+      <li>Less space inside a component than between components.</li>
+      <li>Inner elements never rounder than outer ones.</li>
     </ul></div>
-    <div class="card no"><h3><i class="ph ph-x-circle"></i>Prohibido</h3><ul>
-      <li><code>rounded-2xl</code>, <code>rounded-3xl</code> o <code>rounded-full</code> en tarjetas y botones.</li>
-      <li><code>shadow-md</code> y mayores.</li>
-      <li>Tarjetas dentro de tarjetas con borde y sombra a la vez.</li>
+    <div class="card no"><h3><i class="ph ph-x-circle"></i>Don't</h3><ul>
+      <li><code>rounded-2xl</code>, <code>rounded-3xl</code> or <code>rounded-full</code> on cards and buttons.</li>
+      <li><code>shadow-md</code> and up.</li>
+      <li>Cards inside cards with both border and shadow.</li>
     </ul></div>
   </div>
 </div></section>
 
-<section class="s" id="componentes"><div class="wrap">
+<section class="s" id="components"><div class="wrap">
   <div class="s-head">
-    <div class="label">04 · Componentes</div>
-    <h2>Recetas que la IA copia tal cual</h2>
-    <p>Cada componente tiene su receta exacta de clases en <code>DESIGN.md</code>. Si falta uno, se construye con los mismos tokens y se propone añadirlo.</p>
+    <div class="label">04 · Components</div>
+    <h2>Recipes the AI copies verbatim</h2>
+    <p>Every component has its exact class recipe in <code>DESIGN.md</code>. If one is missing, build it with the same tokens and propose adding it.</p>
   </div>
 
   <div class="grid2">
     <div class="card">
-      <div class="demo"><div class="label">Botones</div>
+      <div class="demo"><div class="label">Buttons</div>
         <div class="row-wrap">
-          <button class="btn primary" type="button"><i class="ph ph-paper-plane-tilt"></i>Enviar factura</button>
-          <button class="btn secondary" type="button">Guardar borrador</button>
-          <button class="btn ghost" type="button">Cancelar</button>
+          <button class="btn primary" type="button"><i class="ph ph-paper-plane-tilt"></i>Send invoice</button>
+          <button class="btn secondary" type="button">Save draft</button>
+          <button class="btn ghost" type="button">Cancel</button>
         </div>
         <div class="row-wrap" style="margin-top:8px">
-          <button class="btn danger" type="button">Borrar cliente</button>
-          <button class="btn secondary icon" type="button" aria-label="Más opciones"><i class="ph ph-dots-three"></i></button>
-          <button class="btn primary" type="button" disabled><span class="spin"></span>Guardando…</button>
+          <button class="btn danger" type="button">Delete client</button>
+          <button class="btn secondary icon" type="button" aria-label="More options"><i class="ph ph-dots-three"></i></button>
+          <button class="btn primary" type="button" disabled><span class="spin"></span>Saving…</button>
         </div>
       </div>
-      <div class="demo"><div class="label">Formularios</div>
-        <div class="field"><label for="f1">Nombre del cliente</label><input class="input" id="f1" placeholder="Ana García"><span class="help">Como aparecerá en la factura.</span></div>
-        <div class="field"><label for="f2">Correo</label><input class="input err" id="f2" value="ana@" aria-invalid="true"><span class="errmsg"><i class="ph ph-warning-circle"></i>Falta el dominio, por ejemplo ana@empresa.com</span></div>
+      <div class="demo"><div class="label">Forms</div>
+        <div class="field"><label for="f1">Client name</label><input class="input" id="f1" placeholder="Ana García"><span class="help">As it will appear on the invoice.</span></div>
+        <div class="field"><label for="f2">Email</label><input class="input err" id="f2" value="ana@" aria-invalid="true"><span class="errmsg"><i class="ph ph-warning-circle"></i>Missing the domain, e.g. ana@company.com</span></div>
         <div class="checks">
-          <label><input class="cb" type="checkbox" checked> Enviar copia</label>
-          <label><input class="cb" type="checkbox"> Recordar</label>
-          <label><input class="sw-t" type="checkbox" role="switch" checked> Avisos por SMS</label>
+          <label><input class="cb" type="checkbox" checked> Send a copy</label>
+          <label><input class="cb" type="checkbox"> Remember</label>
+          <label><input class="sw-t" type="checkbox" role="switch" checked> SMS alerts</label>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <div class="demo"><div class="label">Pestañas</div>
+      <div class="demo"><div class="label">Tabs</div>
         <div class="tabs" role="tablist">
-          <button role="tab" aria-selected="true" type="button">Pendientes <span class="count">12</span></button>
-          <button role="tab" aria-selected="false" type="button">Enviados <span class="count">48</span></button>
-          <button role="tab" aria-selected="false" type="button">Archivo</button>
+          <button role="tab" aria-selected="true" type="button">Pending <span class="count">12</span></button>
+          <button role="tab" aria-selected="false" type="button">Sent <span class="count">48</span></button>
+          <button role="tab" aria-selected="false" type="button">Archive</button>
         </div>
       </div>
-      <div class="demo"><div class="label">Avisos</div>
-        <div class="alert info"><i class="ph ph-info"></i><div><b>Nueva versión del catálogo</b><span>Se publicará mañana a las 09:00.</span></div></div>
-        <div class="alert ok"><i class="ph ph-check-circle"></i><div><b>Reserva movida a M4</b><span>Hemos avisado a Ana por SMS.</span></div></div>
-        <div class="alert warn"><i class="ph ph-warning"></i><div><b>Quedan 3 mesas libres</b><span>El turno de las 21:00 está casi lleno.</span></div></div>
-        <div class="alert bad"><i class="ph ph-x-circle"></i><div><b>No se pudo cobrar</b><span>La tarjeta terminada en 4242 ha caducado.</span></div></div>
+      <div class="demo"><div class="label">Alerts</div>
+        <div class="alert info"><i class="ph ph-info"></i><div><b>New catalog version</b><span>It goes live tomorrow at 09:00.</span></div></div>
+        <div class="alert ok"><i class="ph ph-check-circle"></i><div><b>Booking moved to T4</b><span>We let Ana know by SMS.</span></div></div>
+        <div class="alert warn"><i class="ph ph-warning"></i><div><b>3 tables left</b><span>The 21:00 seating is almost full.</span></div></div>
+        <div class="alert bad"><i class="ph ph-x-circle"></i><div><b>Payment failed</b><span>The card ending in 4242 has expired.</span></div></div>
       </div>
     </div>
   </div>
 
   <div class="tbl-wrap" style="margin-top:20px">
     <table>
-      <thead><tr><th>Hora</th><th>ID</th><th>Cliente</th><th>Estado</th><th class="r">Importe</th></tr></thead>
+      <thead><tr><th>Time</th><th>ID</th><th>Client</th><th>Status</th><th class="r">Amount</th></tr></thead>
       <tbody>
-        <tr><td class="m">09:15</td><td class="m">A-1021</td><td>Lucía Pérez</td><td><span class="tag ok">Pagado</span></td><td class="r">128,00 €</td></tr>
-        <tr><td class="m">10:40</td><td class="m">A-1022</td><td>Bar La Esquina</td><td><span class="tag warn">Pendiente</span></td><td class="r">1.240,50 €</td></tr>
-        <tr class="sel"><td class="m">11:05</td><td class="m">A-1023</td><td>Marta Ruiz</td><td><span class="tag neu">Borrador</span></td><td class="r">56,90 €</td></tr>
-        <tr><td class="m">12:30</td><td class="m">A-1024</td><td>Ferretería Sol</td><td><span class="tag bad">Rechazado</span></td><td class="r">312,00 €</td></tr>
+        <tr><td class="m">09:15</td><td class="m">A-1021</td><td>Lucía Pérez</td><td><span class="tag ok">Paid</span></td><td class="r">€128.00</td></tr>
+        <tr><td class="m">10:40</td><td class="m">A-1022</td><td>Bar La Esquina</td><td><span class="tag warn">Pending</span></td><td class="r">€1,240.50</td></tr>
+        <tr class="sel"><td class="m">11:05</td><td class="m">A-1023</td><td>Marta Ruiz</td><td><span class="tag neu">Draft</span></td><td class="r">€56.90</td></tr>
+        <tr><td class="m">12:30</td><td class="m">A-1024</td><td>Ferretería Sol</td><td><span class="tag bad">Declined</span></td><td class="r">€312.00</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="card demo" style="margin-top:20px"><div class="label">Lo que flota</div>
+  <div class="card demo" style="margin-top:20px"><div class="label">What floats</div>
     <div class="floats">
       <div class="menu" role="menu">
-        <div><i class="ph ph-pencil-simple"></i>Editar reserva</div>
-        <div><i class="ph ph-copy"></i>Duplicar</div>
-        <div><i class="ph ph-arrows-left-right"></i>Mover de mesa</div>
+        <div><i class="ph ph-pencil-simple"></i>Edit booking</div>
+        <div><i class="ph ph-copy"></i>Duplicate</div>
+        <div><i class="ph ph-arrows-left-right"></i>Move table</div>
         <hr>
-        <div class="del"><i class="ph ph-trash"></i>Cancelar reserva</div>
+        <div class="del"><i class="ph ph-trash"></i>Cancel booking</div>
       </div>
       <div class="modal">
-        <div class="hd"><h3>¿Cancelar la reserva de Ana García?</h3></div>
-        <div class="bd">Se liberará la mesa 12 a las 21:00 y Ana recibirá un SMS.</div>
-        <div class="ft"><button class="btn secondary" type="button">Mantener</button><button class="btn danger" type="button">Cancelar reserva</button></div>
+        <div class="hd"><h3>Cancel Ana García's booking?</h3></div>
+        <div class="bd">Table 12 at 21:00 will be freed up and Ana will get an SMS.</div>
+        <div class="ft"><button class="btn secondary" type="button">Keep it</button><button class="btn danger" type="button">Cancel booking</button></div>
       </div>
-      <div class="toast">Reserva movida a M4 <button type="button">Deshacer</button></div>
+      <div class="toast">Booking moved to T4 <button type="button">Undo</button></div>
     </div>
   </div>
 
   <div class="rules">
-    <div class="card yes"><h3><i class="ph ph-check-circle"></i>Usa</h3><ul>
-      <li>Iconos Phosphor regular, 16px en botones, heredando el color del texto.</li>
-      <li>Botones con verbo + objeto: "Guardar reserva", no "OK".</li>
-      <li>Mensajes con datos reales: "Reserva movida a M4".</li>
-      <li>Anillo de foco de acento en todo lo interactivo.</li>
+    <div class="card yes"><h3><i class="ph ph-check-circle"></i>Do</h3><ul>
+      <li>Phosphor regular icons, 16px in buttons, inheriting the text color.</li>
+      <li>Buttons with verb + object: "Save booking", not "OK".</li>
+      <li>Messages with real data: "Booking moved to T4".</li>
+      <li>Accent focus ring on everything interactive.</li>
     </ul></div>
-    <div class="card no"><h3><i class="ph ph-x-circle"></i>Prohibido</h3><ul>
-      <li>Iconos dentro de cuadrados o círculos de color. Emojis como iconos.</li>
-      <li>Mezclar librerías de iconos.</li>
-      <li>"¡Operación realizada con éxito!" y cualquier exclamación.</li>
-      <li><code>outline-none</code> sin alternativa.</li>
+    <div class="card no"><h3><i class="ph ph-x-circle"></i>Don't</h3><ul>
+      <li>Icons inside colored squares or circles. Emojis as icons.</li>
+      <li>Mixing icon libraries.</li>
+      <li>"Operation completed successfully!" and any exclamation mark.</li>
+      <li><code>outline-none</code> without an alternative.</li>
     </ul></div>
   </div>
 </div></section>
 
-<section class="s" id="usar"><div class="wrap">
+<section class="s" id="use"><div class="wrap">
   <div class="s-head">
-    <div class="label">05 · Usarlo</div>
-    <h2>Tres archivos en tu proyecto</h2>
-    <p>Copia los archivos, pega el fragmento en tu <code>CLAUDE.md</code> (o en las reglas de Cursor) y la IA seguirá el sistema en cada pantalla nueva.</p>
+    <div class="label">05 · Use it</div>
+    <h2>Three files in your project</h2>
+    <p>Copy the files, paste the snippet into your <code>CLAUDE.md</code> (or your Cursor rules) and the AI will follow the system on every new screen.</p>
   </div>
   <div class="files">
-    <div class="card"><h3>DESIGN.md</h3><p>Las reglas: qué usar, qué está prohibido y las recetas Tailwind exactas de cada componente.</p><a class="btn secondary sm" href="DESIGN.md" download><i class="ph ph-download-simple"></i>Descargar</a></div>
-    <div class="card"><h3>globals.css</h3><p>Tokens para Tailwind v4, en claro y oscuro. Borra la paleta por defecto: solo existen estos colores, tamaños y radios.</p><a class="btn secondary sm" href="globals.css" download><i class="ph ph-download-simple"></i>Descargar</a></div>
-    <div class="card"><h3>CLAUDE-snippet.md</h3><p>El fragmento que obliga al asistente a leer DESIGN.md antes de crear o cambiar una interfaz.</p><a class="btn secondary sm" href="CLAUDE-snippet.md" download><i class="ph ph-download-simple"></i>Descargar</a></div>
+    <div class="card"><h3>DESIGN.md</h3><p>The rules: what to use, what's forbidden and the exact Tailwind recipe for each component.</p><a class="btn secondary sm" href="DESIGN.md" download><i class="ph ph-download-simple"></i>Download</a></div>
+    <div class="card"><h3>globals.css</h3><p>Tailwind v4 tokens, light and dark. It wipes the default palette: only these colors, sizes and radii exist.</p><a class="btn secondary sm" href="globals.css" download><i class="ph ph-download-simple"></i>Download</a></div>
+    <div class="card"><h3>CLAUDE-snippet.md</h3><p>The snippet that makes the assistant read DESIGN.md before creating or changing any interface.</p><a class="btn secondary sm" href="CLAUDE-snippet.md" download><i class="ph ph-download-simple"></i>Download</a></div>
   </div>
-<pre>## Diseño
+<pre>## Design
 
-Antes de crear o modificar cualquier interfaz, lee `DESIGN.md` y síguelo al pie de la letra.
-- Usa solo los tokens definidos en `globals.css` (colores, tamaños, espaciado, radios).
-- Copia las recetas de componentes de `DESIGN.md`; no inventes estilos nuevos.
-- Iconos: Phosphor (`@phosphor-icons/react`). Nunca Lucide, nunca emojis.
-- Si algo no encaja, para y propón el cambio en `DESIGN.md` en vez de saltártelo.</pre>
+Before creating or changing any interface, read `DESIGN.md` and follow it to the letter.
+- Use only the tokens defined in `globals.css` (colors, sizes, spacing, radii).
+- Copy the component recipes from `DESIGN.md`; don't invent new styles.
+- Icons: Phosphor (`@phosphor-icons/react`). Never Lucide, never emojis.
+- If something doesn't fit, stop and propose the change in `DESIGN.md` instead of skipping it.</pre>
 </div></section>
 
 </main>
@@ -514,7 +514,7 @@ Antes de crear o modificar cualquier interfaz, lee `DESIGN.md` y síguelo al pie
 </div></footer>
 
 <script>
-// Muestras de color con el valor activo de cada token
+// Color swatches with each token's current value
 const css = () => getComputedStyle(document.documentElement);
 function paint() {
   document.querySelectorAll("[data-sw]").forEach(g => {
@@ -527,7 +527,7 @@ function paint() {
 paint();
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change", paint);
 
-// Tema: sistema → claro/oscuro manual
+// Theme: system → manual light/dark
 const root = document.documentElement;
 try { const t = localStorage.getItem("ds-theme"); if (t) root.dataset.theme = t; } catch (e) {}
 document.getElementById("theme").addEventListener("click", () => {
@@ -537,13 +537,13 @@ document.getElementById("theme").addEventListener("click", () => {
   paint();
 });
 
-// Pestañas
+// Tabs
 document.querySelectorAll(".tabs").forEach(t => t.addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
   t.querySelectorAll("button").forEach(x => x.setAttribute("aria-selected", x === b));
 }));
 
-// Índice: marca la sección visible
+// TOC: highlight the visible section
 const links = [...document.querySelectorAll("nav.toc a")];
 const io = new IntersectionObserver(es => es.forEach(e => {
   if (e.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));

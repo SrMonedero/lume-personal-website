@@ -16,7 +16,6 @@ description: Software engineer. The Left Bit, Semantico, BOE Fácil.
 ## Projects
 
 - [BOE Fácil](https://boefacil.com)
-- [BeWelhome](https://bewelhome.com/)
 - [LaGuiaDeMI](https://laguiademi.com)
 - [Papel + Cian](/design/) · design system
 
@@ -25,6 +24,10 @@ description: Software engineer. The Left Bit, Semantico, BOE Fácil.
 - [krdb](https://krdb.quique.info)
 - [Sobremesa](https://sobremesa.quique.info)
 - [Secreto](https://secreto.quique.info)
+
+## Ideas
+
+- [BeWelhome](https://bewelhome.com/)
 - [Lemon](https://lemon.quique.info)
 
 ## Contact
