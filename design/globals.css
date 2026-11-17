@@ -1,0 +1,125 @@
+/* globals.css — Tailwind v4 · Design system v0
+   Papel + Cian · Atkinson Hyperlegible Next + Mono · Normal / radio 6 / líneas / sombras solo en flotantes
+   Fuentes (en el <head> o con next/font/google):
+   https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Mono:wght@200..800&display=swap
+*/
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #F5F2EC;
+  --surface: #FCFAF7;
+  --line: #DFDCD6;
+  --line-strong: #C5C2BC;
+  --fg-muted: #4F4D48;
+  --fg: #181611;
+  --fg-subtle: #696661;
+  --accent: #0099C6;
+  --accent-hover: #0E85AC;
+  --accent-fg: #001924;
+  --accent-soft: #DCE7E8;
+  --accent-text: #006C8E;
+  --success: #2B6B3A;
+  --success-soft: #E2F0E4;
+  --warning: #8A5300;
+  --warning-soft: #FBEFD9;
+  --danger: #B42318;
+  --danger-soft: #FBE5E2;
+  --shadow-float-value: 0 8px 24px -8px rgb(24 22 17 / .18), 0 1px 2px rgb(24 22 17 / .08);
+}
+
+.dark {
+  --bg: #12100D;
+  --surface: #1A1915;
+  --line: #292723;
+  --line-strong: #3F3D38;
+  --fg-muted: #BFBDBA;
+  --fg: #ECEBE8;
+  --fg-subtle: #8E8C88;
+  --accent: #0099C6;
+  --accent-hover: #2DACDA;
+  --accent-fg: #001924;
+  --accent-soft: #1B282D;
+  --accent-text: #0C9CC9;
+  --success: #6CCB85;
+  --success-soft: #163020;
+  --warning: #F2B44C;
+  --warning-soft: #36280F;
+  --danger: #F7806F;
+  --danger-soft: #3B1714;
+  --shadow-float-value: 0 8px 24px -8px rgb(0 0 0 / .6), 0 0 0 1px #292723;
+}
+
+@theme inline {
+  /* Color: borra la paleta por defecto; solo existen estos tokens */
+  --color-*: initial;
+  --color-white: #fff;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg: var(--fg);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-text: var(--accent-text);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+
+  /* Sombras: solo para lo que flota */
+  --shadow-*: initial;
+  --shadow-float: var(--shadow-float-value);
+}
+
+@theme {
+  /* Tipografía */
+  --font-*: initial;
+  --font-display: "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Atkinson Hyperlegible Mono", ui-monospace, monospace;
+
+  --text-*: initial;
+  --text-xs: 0.75rem;          --text-xs--line-height: 1rem;
+  --text-sm: 0.875rem;         --text-sm--line-height: 1.25rem;
+  --text-base: 1rem;           --text-base--line-height: 1.5rem;
+  --text-lg: 1.125rem;         --text-lg--line-height: 1.75rem;
+  --text-title: 1.25rem;       --text-title--line-height: 1.75rem;
+  --text-heading: 1.75rem;     --text-heading--line-height: 2rem;       --text-heading--letter-spacing: -0.02em;
+  --text-display-lg: 2.25rem;  --text-display-lg--line-height: 2.5rem;  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-xl: 3rem;     --text-display-xl--line-height: 3.0625rem; --text-display-xl--letter-spacing: -0.02em;
+  --text-display-2xl: 4rem;    --text-display-2xl--line-height: 4.125rem; --text-display-2xl--letter-spacing: -0.02em;
+
+  /* Espaciado: base 4px + tokens semánticos (h-control, p-card, gap-stack, h-row, py-section…) */
+  --spacing: 0.25rem;
+  --spacing-control: 2.5rem;
+  --spacing-control-x: 0.875rem;
+  --spacing-card: 1.5rem;
+  --spacing-stack: 1rem;
+  --spacing-gap: 1.25rem;
+  --spacing-row: 2.75rem;
+  --spacing-section: 5rem;
+
+  /* Radios */
+  --radius-*: initial;
+  --radius-sm: 3px;
+  --radius: 6px;
+  --radius-lg: 9px;
+  --radius-full: 9999px;
+}
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; }
+  body { @apply bg-bg text-fg font-sans text-base; line-height: 1.55; }
+  h1, h2, h3 { @apply font-display font-bold; letter-spacing: -0.02em; }
+  * { @apply border-line; }
+  :focus-visible { outline: 2px solid var(--accent-text); outline-offset: 2px; }
+}
